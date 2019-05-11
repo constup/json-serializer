@@ -73,14 +73,14 @@ class ObjectCreator
         foreach ($properties as $key=>$value) {
             if (is_object($value)) {
                 $improved_key = $key . ':' . get_class($value);
-                $result->$improved_key = (new self($value))->generateJsonObject();
+                $result->$improved_key = (new self($value, $this->isSerializeOnlyLeaf()))->generateJsonObject();
             } else {
                 $improved_key = $key . ':' . gettype($value);
                 if (is_array($value)) {
                     $value_array = [];
                     foreach ($value as $data) {
                         if (is_object($data)) {
-                            $value_array[] = (new self($data))->generateJsonObject();
+                            $value_array[] = (new self($data, $this->isSerializeOnlyLeaf()))->generateJsonObject();
                         } else {
                             $value_array[] = $data;
                         }
