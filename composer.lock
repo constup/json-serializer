@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9e67c697b57c7002ab9faf0a0cf84f88",
+    "packages": [
+        {
+            "name": "constup/class-object-utils",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/constup/class-object-utils.git",
+                "reference": "8ced72cbde88e8bc1482a498d3b7c3afb3dfe887"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/constup/class-object-utils/zipball/8ced72cbde88e8bc1482a498d3b7c3afb3dfe887",
+                "reference": "8ced72cbde88e8bc1482a498d3b7c3afb3dfe887",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "phan/phan": "^0.12.12",
+                "phpunit/phpunit": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Constup\\ClassObjectUtils\\": "src",
+                    "Constup\\ClassObjectUtils\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Constup",
+                    "email": "16638173+constup@users.noreply.github.com"
+                }
+            ],
+            "description": "A set of PHP class and object utilities.",
+            "time": "2018-06-16T00:32:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.2.0",
+        "ext-json": "^1.6"
+    },
+    "platform-dev": []
+}
